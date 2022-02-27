@@ -1,0 +1,114 @@
+.TimeZones {
+  margin: 50px;
+}
+
+.TimeZones__form {
+  display: flex;
+}
+
+.TimeZones__form input {
+  padding: 5px 10px;
+}
+
+.TimeZones__form label:nth-child(n+1) {
+  margin-right: 20px;
+}
+
+.TimeZones__form button {
+  padding: 10px;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 2px 1px slategray;
+  cursor: pointer;
+}
+
+.TimeZones-clockscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  margin-top: 30px;
+}
+
+.TimeZones-delete {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000a2c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.TimeZones-delete::after {
+  content: '×';
+  font-size: 34px;
+  line-height: 12px;
+  color: slategray;
+}
+
+.TimeZones__Clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.TimeZones__Clock-clock {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 2px solid #00515c;
+  border-radius: 50%;
+  margin-top: 8px;
+  background: rgb(246, 253, 255);
+  background: radial-gradient(circle, rgba(246, 253, 255, 1) 0%, rgba(255, 255, 255, 1) 39%, rgba(255, 252, 225, 1) 100%);
+}
+
+.TimeZones__Clock-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.TimeZones__Clock-hour, .TimeZones__Clock-minute, .TimeZones__Clock-second {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.TimeZones__Clock-hand {
+  position: absolute;
+}
+
+.TimeZones__Clock-hour .TimeZones__Clock-hand {
+  top: 20%;
+  right: 20%;
+  width: 30%;
+  height: 30%;
+  border-left: 4px solid #00424b;
+}
+
+.TimeZones__Clock-minute .TimeZones__Clock-hand {
+  position: absolute;
+  top: 7.5%;
+  right: 7.5%;
+  width: 42.5%;
+  height: 42.5%;
+  border-left: 2px solid #005c68;
+}
+
+.TimeZones__Clock-second .TimeZones__Clock-hand {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  width: 47.5%;
+  height: 47.5%;
+  border-left: 2px dashed #0093a7;
+}
